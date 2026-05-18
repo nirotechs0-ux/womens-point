@@ -143,7 +143,7 @@ export default function HomePage({ navigate }: HomePageProps) {
         <div className="flex flex-wrap justify-center gap-3 max-w-[700px] mx-auto">
           <CountCard icon="🏆" target={8}    suffix="+"  label="Years of Expertise"  delay={0}    />
           <CountCard icon="💍" target={500}  suffix="+"  label="Bridal Makeups"       delay={0.15} />
-          <CountCard icon="⭐" target={4}    suffix=".8" label="Average Rating"       delay={0.3}  />
+          <CountCard icon="⭐" target={4}    suffix=".9" label="Average Rating"       delay={0.3}  />
           <CountCard icon="📋" target={1000} suffix="+"  label="Bookings Done"        delay={0.45} />
         </div>
       </div>
@@ -231,8 +231,11 @@ export default function HomePage({ navigate }: HomePageProps) {
       </section>
 
       {/* MILESTONES */}
+      {/* MILESTONES */}
       <section className="py-[50px] px-[5%]">
         <div className="max-w-[700px] mx-auto text-center">
+
+          {/* Text - sabse upar */}
           <FadeUp><SectionLabel text="Our Journey" /></FadeUp>
           <FadeUp>
             <h2 className="font-playfair text-[clamp(30px,4vw,46px)] font-bold text-richbrown leading-[1.15] mb-4">
@@ -245,14 +248,46 @@ export default function HomePage({ navigate }: HomePageProps) {
               every achievement is a reflection of our clients' love and trust.
             </p>
           </FadeUp>
+
+          {/* Row 1: 2 photos side by side */}
           <FadeUp>
-            <button
-              onClick={() => navigate("contact")}
-              className="bg-gold hover:bg-gold-dark text-white px-8 py-3.5 rounded-full text-[13px] font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(196,156,120,0.35)]"
-            >
-              Book Your Session
-            </button>
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              <div className="rounded-2xl overflow-hidden h-[200px]">
+                <img
+                  src="/maam1.jpeg"
+                  alt="Milestone 1"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden h-[200px]">
+                <img
+                  src="/maam2.jpeg"
+                  alt="Milestone 2"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
           </FadeUp>
+
+          {/* Row 2: maam3 full width with text overlay at very bottom */}
+          <FadeUp>
+            <div className="relative rounded-2xl overflow-hidden h-[340px]">
+              <img
+                src="/maam3.png"
+                alt="Milestone 3"
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+              />
+              {/* Gradient only at very bottom */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              {/* Text pinned to very bottom */}
+              <div className="absolute bottom-0 left-0 right-0 px-6 pb-4 text-center">
+                <p className="text-[12px] text-white/80 leading-relaxed">
+                  Every achievement is a reflection of our clients' love and trust.
+                </p>
+              </div>
+            </div>
+          </FadeUp>
+
         </div>
       </section>
 

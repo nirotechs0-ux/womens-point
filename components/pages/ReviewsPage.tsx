@@ -32,7 +32,7 @@ export default function ReviewsPage({ navigate }: ReviewsPageProps) {
         <FadeUp>
           <div className="bg-cream rounded-3xl p-10 flex items-center gap-16 mb-12 flex-wrap">
             <div className="text-center">
-              <div className="font-playfair text-[72px] font-bold text-gold leading-none">4.8</div>
+              <div className="font-playfair text-[72px] font-bold text-gold leading-none">4.9</div>
               <div className="text-gold text-[22px] tracking-[4px] mt-1">★★★★★</div>
               <div className="text-[13px] text-richbrown-light mt-1">Based on 200+ reviews</div>
             </div>

@@ -18,11 +18,11 @@ export async function POST(req: NextRequest) {
     const fullPhone = `+91${cleaned}`;
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
-    // ── Send OTP via WhatsApp (works with Twilio sandbox internationally) ──
+    // Send OTP via SMS
     await client.messages.create({
-      body: `🌸 *Womens Point Beauty Parlour*\n\nYour OTP is: *${otp}*\n\nValid for 10 minutes. Do not share with anyone.`,
-      from: process.env.TWILIO_WHATSAPP_FROM!, // whatsapp:+14155238886
-      to: `whatsapp:${fullPhone}`,
+      body: `Your OTP for Womens Point Beauty Parlour is: ${otp}. Valid for 10 minutes. Do not share with anyone.`,
+      from: process.env.TWILIO_PHONE_NUMBER!,
+      to: fullPhone,
     });
 
     const encoded = Buffer.from(`${otp}:${Date.now()}`).toString("base64");

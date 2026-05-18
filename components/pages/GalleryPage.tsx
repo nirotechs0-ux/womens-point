@@ -13,6 +13,9 @@ interface GalleryPageProps {
 
 const IMG = {
   bridal1: "https://i.pinimg.com/1200x/04/8c/87/048c879d37a97c05da8e38a8d9a9a633.jpg",
+  bridal2: "/bridal2.jpeg",
+  bridal3: "/bridal3.jpeg",
+  bridal4: "/bridal4.jpeg",
   hair1: "https://i.pinimg.com/736x/e9/89/2b/e9892bf1ca5ee8cb5ba32cfc6ab6b92d.jpg",
   hair2: "https://i.pinimg.com/736x/ec/85/7a/ec857a2fd80c2c9cd8e5d1a8e0fb1564.jpg",
   nails: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80",
@@ -30,6 +33,9 @@ const tabs = ["All", "Bridal", "Hair", "Nails", "Skin", "Makeup"];
 
 const images = [
   { src: IMG.bridal1, cat: "Bridal", label: "Bridal HD Makeup" },
+  { src: IMG.bridal2, cat: "Bridal", label: "Bridal HD Makeup" },
+  { src: IMG.bridal3, cat: "Bridal", label: "Bridal HD Makeup" },
+  { src: IMG.bridal4, cat: "Bridal", label: "Bridal HD Makeup" },
   { src: IMG.hair1, cat: "Hair", label: "Hair Styling" },
   { src: IMG.nails, cat: "Nails", label: "Nail Art" },
   { src: IMG.skin, cat: "Skin", label: "Skin Glow" },
