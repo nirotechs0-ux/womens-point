@@ -18,6 +18,10 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Womens Point Beauty Parlour",
   description: "Premium beauty services — Bridal Makeup, Hair, Skin Care, Nails & more. Book your appointment online.",
+  icons: {
+    icon: "/api/icon",
+    apple: "/api/icon",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
